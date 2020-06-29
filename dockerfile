@@ -1,4 +1,5 @@
-FROM ubuntu:latest
+FROM httpd:latest
 RUN apt-get update -y
-RUN apt-get install -y httpd
-ADD . /var/www/html/
+ADD index.html /usr/local/apache2/htdocs/
+
+
